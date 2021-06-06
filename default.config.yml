@@ -24,15 +24,15 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
-dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
-dotfiles_files:
-  - .zshrc
-  - .gitignore
-  - .inputrc
-  - .osx
-  - .vimrc
+# dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+# dotfiles_repo_accept_hostkey: true
+# dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+# dotfiles_files:
+#   - .zshrc
+#   - .gitignore
+#   - .inputrc
+#   - .osx
+#   - .vimrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -104,10 +104,10 @@ npm_packages: []
 # - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
-pip_packages: []
-# - name: mkdocs
-#   state: present # present/absent/latest, default: present
-#   version: "0.16.3" # default: N/A
+pip_packages: 
+ - name: mkdocs
+   state: present # present/absent/latest, default: present
+   version: "0.16.3" # default: N/A
 
 # Set to 'true' to configure Sublime Text.
 configure_sublime: false
